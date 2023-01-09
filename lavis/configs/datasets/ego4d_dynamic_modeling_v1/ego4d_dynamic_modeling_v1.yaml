@@ -1,0 +1,19 @@
+datasets:
+  ego4d_dynamic_modeling_v1: # name of the dataset builder
+    dataset_card: dataset_card/ego4d_dynamic_modeling_v1.md
+    data_type: images #extracted features of videos (I3D, VGGish) # [images|videos|features]
+
+    build_info:
+      # Be careful not to append minus sign (-) before split to avoid itemizing
+      annotations:
+        train:
+          url: /shared/nas/data/m1/wangz3/phy-lm-vid/dataset/ego4d/ego4d_dynamic_modeling_v1/annotations/narration_annotations_train.json
+          storage: ego4d_dynamic_modeling_v1/annotations/narration_annotations_train.json
+        val:
+          url: /shared/nas/data/m1/wangz3/phy-lm-vid/dataset/ego4d/ego4d_dynamic_modeling_v1/annotations/narration_annotations_val.json
+          storage: ego4d_dynamic_modeling_v1/annotations/narration_annotations_val.json
+        test:
+          url: /shared/nas/data/m1/wangz3/phy-lm-vid/dataset/ego4d/ego4d_dynamic_modeling_v1/annotations/narration_annotations_test.json
+          storage: ego4d_dynamic_modeling_v1/annotations/narration_annotations_test.json
+      images:
+        storage: /shared/nas/data/m1/wangz3/phy-lm-vid/dataset/ego4d/ego4d_dynamic_modeling_v1/images
